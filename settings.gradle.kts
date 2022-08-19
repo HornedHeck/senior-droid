@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Andoroid Samples"
-include ':app'
+include(":app")
