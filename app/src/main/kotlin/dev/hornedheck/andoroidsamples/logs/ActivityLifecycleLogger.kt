@@ -12,27 +12,27 @@ class ActivityLifecycleLogger : Application.ActivityLifecycleCallbacks {
     }
 
     override fun onActivityStarted(activity: Activity) {
-        Log.d(TAG, "${activity.javaClass.name} created")
+        Log.d(TAG, "${activity.javaClass.name} started")
     }
 
     override fun onActivityResumed(activity: Activity) {
-        Log.d(TAG, "${activity.javaClass.name} created")
+        Log.d(TAG, "${activity.javaClass.name} resumed")
     }
 
     override fun onActivityPaused(activity: Activity) {
-        Log.d(TAG, "${activity.javaClass.name} created")
+        Log.d(TAG, "${activity.javaClass.name} paused")
     }
 
     override fun onActivityStopped(activity: Activity) {
-        Log.d(TAG, "${activity.javaClass.name} created")
+        Log.d(TAG, "${activity.javaClass.name} stopped")
     }
 
     override fun onActivitySaveInstanceState(activity: Activity, bundle: Bundle) {
-        Log.d(TAG, "${activity.javaClass.name} created")
+//        Do nothing
     }
 
     override fun onActivityDestroyed(activity: Activity) {
-        Log.d(TAG, "${activity.javaClass.name} created")
+        Log.d(TAG, "${activity.javaClass.name} destroyed")
     }
 
     companion object {
