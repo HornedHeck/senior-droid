@@ -36,12 +36,18 @@ android {
 }
 
 dependencies {
+    implementation(Android.KTX_CORE)
+    implementation(Android.COMPAT)
+    implementation(Android.GOOGLE_MATERIAL)
+    implementation(Android.KTX_VM)
 
-    implementation(AndroidDependencies.KTX_CORE)
-    implementation(AndroidDependencies.COMPAT)
-    implementation(AndroidDependencies.GOOGLE_MATERIAL)
+    implementation(Koin.CORE)
+    implementation(Koin.ANDROID)
 
-    testImplementation(MainDependencies.JUNIT4)
-    androidTestImplementation(AndroidDependencies.JUNIT_ANDROID)
-    androidTestImplementation(AndroidDependencies.ESPRESSO)
+    testImplementation(Main.JUNIT4)
+    testImplementation(Koin.TEST)
+    testImplementation(Koin.JUNIT4)
+
+    androidTestImplementation(Android.JUNIT_ANDROID)
+    androidTestImplementation(Android.ESPRESSO)
 }

@@ -1,14 +1,21 @@
 package dev.hornedheck.andoroidsamples.android
 
 import android.app.Application
-import dev.hornedheck.andoroidsamples.logs.ActivityLifecycleLogger
+import dev.hornedheck.andoroidsamples.logs.logsModule
+import org.koin.android.ext.koin.androidContext
+import org.koin.core.context.startKoin
 
 class HornedApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
 
-        val lifecycleLogger = ActivityLifecycleLogger()
+        val koin = startKoin {
+            androidContext(this@HornedApp)
+            modules(logsModule)
+        }.koin
+
+        val lifecycleLogger = koin.get<ActivityLifecycleCallbacks>()
         registerActivityLifecycleCallbacks(lifecycleLogger)
     }
 
