@@ -1,4 +1,4 @@
-package dev.hornedheck.andoroidsamples.android
+package dev.hornedheck.andoroidsamples.utils
 
 import android.app.Application
 import dev.hornedheck.andoroidsamples.logs.logsModule

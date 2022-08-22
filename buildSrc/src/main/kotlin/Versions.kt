@@ -13,5 +13,6 @@ object Versions {
     const val JUNIT_ANDROID = "1.1.3"
     const val ESPRESSO = "3.4.0"
     const val LIFECYCLE_VM = "2.5.1"
+    const val CONSTRAINT_LAYOUT = "2.1.4"
 
 }
