@@ -40,6 +40,7 @@ dependencies {
     implementation(Android.COMPAT)
     implementation(Android.GOOGLE_MATERIAL)
     implementation(Android.KTX_VM)
+    implementation(Android.CONSTRAINT_LAYOUT)
 
     implementation(Koin.CORE)
     implementation(Koin.ANDROID)
