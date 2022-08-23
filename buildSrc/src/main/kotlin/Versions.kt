@@ -1,5 +1,10 @@
 object Versions {
 
+//    Build configs
+    const val COMPILE_SDK = 32
+    const val MIN_SDK = 21
+    const val TARGET_SDK = 32
+
 //    Main Libs
     const val KOTLIN = "1.7.10"
     const val JUNIT4 = "4.13.2"
